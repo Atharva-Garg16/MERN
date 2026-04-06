@@ -1,0 +1,20 @@
+.box1,box2{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    font-size: 25px;
+    text-align: center;
+    border: 2px solid black;
+}
+.box1{
+    background-color: red;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+.box2{
+    background-color: blue;
+    top: 70px;
+    left: 70px;
+    z-index: 2;
+}

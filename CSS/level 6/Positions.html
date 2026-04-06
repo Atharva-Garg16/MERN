@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            height: 70px;
+            width: 70px;
+            border: 2px solid black;
+                margin: 10px;
+                background-color: chartreuse;
+        }
+        #static {
+            position: static;
+                
+        }
+        #relative {
+            position: relative;
+                top: 20px;
+                left: 90px;
+        }
+        #absolute {
+            position: absolute;
+                    top: 200px;
+                left: 200px;
+        }
+        #fixed {
+            position: fixed;
+                    top: 20px;
+                left: 90px;
+        }
+        #m{
+            height: 2000px;
+            visibility: hidden;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="static">static</div>
+    <div id="relative">relative</div>
+    <div id="absolute">absolute</div>
+    <div id="fixed">fixed</div>
+    <div id="m"></div>
+</body>
+</html>
