@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .box1,
+        .box2,
+        .box3 {
+            padding: 4px;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        @media screen and (width: 600px) {
+
+            /* When the screen width is exactly 600px, the background color of .box1 will change to blue and it will have a black border. */
+            .box1 {
+                background-color: blue;
+                border: 4px solid black;
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+
+            /* When the screen width is at least 600px, the background color of .box1 will change to blue and it will have a black border. */
+            .box2 {
+                background-color: blue;
+                border: 4px solid black;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+
+            /* When the screen width is at most 600px, the background color of .box1 will change to blue and it will have a black border. */
+            .box3 {
+                background-color: blue;
+                border: 4px solid black;
+            }
+        }
+    </style>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box1">Box1 </div>
+    <br>
+    <div class="box2">Box2 </div>
+    <br>
+    <div class="box3">Box3</div>
+
+</body>
+
+</html>
