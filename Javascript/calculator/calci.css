@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#block{
+    border: 2px solid rgb(228, 74, 74);
+    background-color: rgb(8, 10, 7);
+    border-radius: 10px;
+    width: 325px;
+    position: relative;
+    left: 45%;
+    height: 467px;
+    margin-top: 10px;
+    
+}
+#display{
+   width: 90%;
+   height: 30px;
+   background-color: green;
+   margin: 15px;
+   font-weight: 700;
+   font-size: x-large;
+}
+.buttons{
+    width: 72px;
+    height: 48px;
+    margin: 9px;
+    border: 2px solid rgb(2, 2, 2);
+    border-radius: 10px;
+    background-color: rgb(138, 142, 135);
+    font-weight: 700;
+    font-size: xx-large;
+}
+#Button_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
