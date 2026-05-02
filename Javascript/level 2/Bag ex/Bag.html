@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bag.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="Bag_value"></h1>    
+    <button class="green" onclick="cart+=1;document.querySelector('#Bag_value').innerHTML=`Your Bag has ${cart} items`;">Add to Bag</button>
+    <button id="Wishlist" onclick="cart-=1;document.querySelector('#Bag_value').innerHTML=`Your Bag has ${cart} items`;">Move to Wishlist</button>
+    <button class="green" onclick="cart+=2;document.querySelector('#Bag_value').innerHTML=`Your Bag has ${cart} items`;">Add 1+1 sale item</button>
+    <script>
+        let cart=0;
+        document.querySelector('#Bag_value').innerHTML=`Your Bag has ${cart} items`;
+
+
+    </script>
+</body>
+</html>
