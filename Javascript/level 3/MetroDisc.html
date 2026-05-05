@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <p style="font-size: 60px;">@ console and refresh</p>
+    <script>
+        let age=Math.round(Math.random()*100); let gender=Math.random()<0.5?"male":"female";
+        let ticketPrice;
+        if(age<5){
+            ticketPrice=0;
+        }
+        else if(gender==="female" || age<=8){
+            ticketPrice=50;
+        }
+        else if(age>65){
+            ticketPrice=70;
+        }
+        else{
+            ticketPrice=100;
+        }
+        console.log("Age: " + age + ", Gender: " + gender + ", Ticket Price: " + ticketPrice);
+    </script>
+    
+</body>
+</html>
