@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Object</title>
+</head>
+<body>
+    <h1>objects see @ console</h1>
+    <script>
+        let product={
+            company:"Mango",
+            price: 667,
+            item_name: "T-shirt",
+        };
+        console.log(product);
+        console.log(typeof(product));
+        // dot notation
+        console.log(product.item_name);
+        product.item_name="Top";
+        console.log(product.item_name);
+        // bracket notation pass property as String
+        console.log(product["price"]);
+        // why need of [] notation
+        let property='company';
+        console.log(product[property])
+        console.log(product.property);
+        delete product.company
+        console.log(product)
+    </script>
+</body>
+</html>

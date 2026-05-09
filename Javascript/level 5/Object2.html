@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+    <script>
+        let product = {
+            company: "Mango",
+            price: 667,
+            item_name: "T-shirt",
+            rating: {
+                stars: 4.5,
+                no_of_people: 600,
+            },
+            productDetails: function () {
+                document.querySelector('h1').innerHTML = `${product.company} ${product.price}`
+            }
+        };
+        // console.log() -> console is a object and log() is a method
+        product.productDetails();
+    </script>
+</body>
+
+</html>

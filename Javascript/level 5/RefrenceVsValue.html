@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reference vs Value</h1>
+    <p>Reference type variables are stored as memory addresses, while value type variables are stored as actual values.</p>
+    <script>
+        let a=8;
+        let b=a;
+        console.log(`a=${a}, b=${b}`);
+        console.log(a===b)
+        b=10;
+         console.log(`a=${a}, b=${b}`);
+         let c={
+            name:"Mango",
+            price:667   ,
+         }
+         let d={
+            name:"Mango",
+            price:667   ,
+         }
+         console.log(c);
+         console.log(d);
+            console.log(c===d);
+            // c and d are different objects stored at different memory locations because c===d checks for reference equality and not value equality
+            c=d;
+            c.name="Apple";
+            console.log(`c=${c.name}, d=${d.name }`);
+            console.log(c===d);
+
+    </script>
+</body>
+</html>
