@@ -7,22 +7,27 @@
 </head>
 
 <body>
-    <h1>Bat Ball Stump</h1>
-    <button onclick="let computerChoice = generateComputerChoice();
+    <h1>Cricket Game</h1>
+    <button class="choice" onclick="let computerChoice = generateComputerChoice();
   let resultMsg = getResult('Bat', computerChoice);
-  showResult('Bat', computerChoice, resultMsg);">Bat</button>
-    <button onclick=" computerChoice = generateComputerChoice();
+  showResult('Bat', computerChoice, resultMsg);"><img src="Media/bat.png" alt="Bat"></button>
+    <button class="choice" onclick=" computerChoice = generateComputerChoice();
    resultMsg = getResult('Ball', computerChoice);
-  showResult('Bat', computerChoice, resultMsg);">Ball</button>
-    <button onclick="    computerChoice = generateComputerChoice();
+  showResult('Ball', computerChoice, resultMsg);"><img src="Media/ball.png" alt="Ball"></button>
+    <button class="choice" onclick="    computerChoice = generateComputerChoice();
     resultMsg = getResult('Stump', computerChoice);
-    showResult('Stump', computerChoice, resultMsg);">Stump</button>
-    <button onclick="localStorage.clear();resetScore();">Reset</button>
-      <h3 id="user-move"></h3>
-  <h3 id="computer-move"></h3>
-  <h3 id="result"></h3>
-  <h3 id="score"></h3>
-   
+    showResult('Stump', computerChoice, resultMsg);"><img src="Media/stump.png" alt="Stump"></button>
+    <br>
+    <div>
+        <h2>ScoreBoard</h2>
+        <h3 id="user-move"></h3>
+        <h3 id="computer-move"></h3>
+        <h3 id="result"></h3>
+        <h3 id="score"></h3>
+    </div>
+    <br>
+    <button class="reset" onclick="localStorage.clear();resetScore();">Reset</button>
+
     <script>
 
         let scoreStr = localStorage.getItem('Score');
@@ -96,7 +101,7 @@
             localStorage.setItem('Score', JSON.stringify(score));
 
             document.querySelector('#user-move').innerText =
-                userMove ? `You have chosen ${userMove}` : '';
+                userMove ? `You have chosen  ${userMove}` : '';
 
             document.querySelector('#computer-move').innerText =
                 computerMove ? `Computer choice is ${computerMove}` : '';
