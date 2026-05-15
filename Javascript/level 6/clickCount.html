@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .js-odd{
+            background-color: blue;
+            color: whitesmoke;
+        }
+        .js-even{
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="odd even" id="My-Button" onclick="buttonPress(); " style="margin-top: 45%; margin-left: 45%; height: 200px; width: 200px; font-size: 100px;border: none ; border-radius: 25%
+    ">0</button>
+    <br>
+    <br>
+    <button style="margin: 3px; margin-left: 45%; height: 100px; width: 200px; font-size: 20px;
+    border: none ; border-radius: 25% " onclick="clicks=0; localStorage.clear()">Reset</button>
+    <script>
+       
+    let clicks = Number(localStorage.getItem('clicks')) || 0;
+
+    let button = document.querySelector('#My-Button');
+
+    function buttonPress() {
+        clicks++;
+        updateButton();
+    }
+
+    function updateButton() {
+        button.innerHTML = clicks;
+        if (clicks % 2 == 0) {
+            button.classList.remove('js-odd');
+            button.classList.add('js-even');
+        } else {
+            button.classList.remove('js-even');
+            button.classList.add('js-odd');
+        }
+        localStorage.setItem("clicks", clicks);
+    }
+
+    // Initialize the button state on page load
+    updateButton();
+</script>
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        let name="Atharva";
+        let time = new Date().getHours();
+        let heading = document.querySelector('h1');
+      function greet(name){
+        if(time<12){
+            heading.innerText = `Good Morning ${name}`;
+        }
+        else if(time<18){
+            heading.innerText = `Good Afternoon ${name}`;
+        }
+        else{
+            heading.innerText = `Good Evening ${name}`;
+        }
+      }  greet(name);
+    </script>
+</body>
+</html>
