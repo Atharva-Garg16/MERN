@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let b=6;
+        let a=[1,2,3];
+        console.log(Array.isArray(a));
+        console.log(Array.isArray(b));
+        console.log(a.length)
+        a.push(4);
+        console.log(a);
+        console.log("poped value "+a.pop());
+        console.log(a);
+        a.unshift(6);
+        console.log(a);
+        console.log("shifted value = "+a.shift());
+        // splice is used to add or remove elements at a particular location
+        let arr=[1,2,3,4,5,6,7];
+        arr.splice(1,2);// Delete 2 elements from index 1
+        // console.log(arr)
+        // arr.splice(1,0,7,10);
+        console.log(arr);
+        console.log(arr.toString())
+        arr.sort()
+        console.log(arr)
+
+        
+
+    </script>
+</body>
+</html>
